@@ -1,0 +1,59 @@
+{
+  "name": "setup-whatchanged",
+  "version": "2.3.0",
+  "private": true,
+  "description": "setup whatchanged action",
+  "main": "src/setup-whatchanged.ts",
+  "scripts": {
+    "build": "ncc build -o dist",
+    "check": "run-p format-check lint test check-lock",
+    "format": "run-s \"format-check -- --write\"",
+    "format-check": "prettier --check **/*.{md,json,js,ts}",
+    "lint": "eslint --ext ts src/ __tests__",
+    "test": "jest",
+    "checksum": "ncc build -o _dist && node ./scripts/checksum.js",
+    "check-lock": "npx lockfile-lint --path package-lock.json --allowed-hosts npm yarn --validate-https"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axetroy/setup-whatchanged.git"
+  },
+  "keywords": [
+    "actions",
+    "whatchanged",
+    "setup"
+  ],
+  "author": "Axetroy",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/io": "^1.0.2",
+    "@actions/exec": "^1.0.4",
+    "@actions/http-client": "1.0.9",
+    "@actions/tool-cache": "^1.6.0",
+    "semver": "^7.3.2",
+    "uuid": "8.3.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.15",
+    "@types/node": "^14.14.5",
+    "@typescript-eslint/eslint-plugin": "^4.6.0",
+    "@typescript-eslint/parser": "^4.6.0",
+    "@zeit/ncc": "^0.22.3",
+    "eslint": "^7.12.1",
+    "eslint-config-prettier": "^6.15.0",
+    "husky": "^4.3.0",
+    "jest": "^26.6.1",
+    "jest-circus": "^26.6.1",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.1.2",
+    "ts-jest": "^26.4.3",
+    "typescript": "^4.0.5"
+  },
+  "husky": {
+    "skipCI": true,
+    "hooks": {
+      "pre-commit": "run-p format-check lint"
+    }
+  }
+}

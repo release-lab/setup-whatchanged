@@ -1,0 +1,10 @@
+name: "Setup WhatChanged environment"
+description: "Setup a WhatChanged command line environment and add it to the PATH"
+author: "Axetroy"
+inputs:
+  version:
+    description: "Specify the version to install"
+    required: true
+runs:
+  using: "node12"
+  main: "dist/index.js"
