@@ -1,6 +1,6 @@
 {
   "name": "setup-whatchanged",
-  "version": "2.3.0",
+  "version": "1.0.0",
   "private": true,
   "description": "setup whatchanged action",
   "main": "src/setup-whatchanged.ts",
