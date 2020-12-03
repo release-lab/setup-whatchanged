@@ -15,7 +15,7 @@ Basic:
 steps:
   - uses: actions/checkout@v2
     with:
-      depth: 1
+      fetch-depth: 0
   - uses: axetroy/setup-whatchanged@v1
     with:
       version: v0.2.0
