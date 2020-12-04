@@ -18,7 +18,7 @@ steps:
       fetch-depth: 0
   - uses: axetroy/setup-whatchanged@v1
     with:
-      version: v0.2.1
+      version: v0.2.2
   - run: |
       whatchanged
 ```
