@@ -6,7 +6,7 @@ on:
 
 jobs:
   stable:
-    name: what-changed ${{ matrix.whatchanged }} in ${{ matrix.os }}
+    name: ${{ matrix.whatchanged }} in ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -34,7 +34,7 @@ jobs:
       - name: Checksum
         run: npm run checksum
 
-      - name: Set up WhatChanged ${{ matrix.whatchanged }}
+      - name: Set up ${{ matrix.whatchanged }}
         uses: ./
         with:
           version: ${{ matrix.whatchanged }}
