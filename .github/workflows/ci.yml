@@ -11,7 +11,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest, macOS-latest]
-        whatchanged: ["v0.2.0"]
+        whatchanged: ["v0.2.1"]
     steps:
       - uses: actions/checkout@v2
         with:
