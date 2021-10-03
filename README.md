@@ -15,10 +15,11 @@ Basic:
 steps:
   - uses: actions/checkout@v2
     with:
-      fetch-depth: 0 # this is important
+      # **this is important**
+      fetch-depth: 0
   - uses: axetroy/setup-whatchanged@v1
     with:
-      version: v0.3.6
+      version: v0.4.0
   - run: |
       whatchanged
 ```
