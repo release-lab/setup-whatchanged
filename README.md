@@ -2,8 +2,8 @@
 
 [![GitHub Actions status](https://github.com/whatchanged-community/setup-whatchanged/workflows/ci/badge.svg?branch=master)](https://github.com/whatchanged-community/setup-whatchanged/actions)
 
-setup [whatchanged](https://github.com/whatchanged-community/whatchanged) command line in
-Github Action
+setup [whatchanged](https://github.com/whatchanged-community/whatchanged)
+command line in Github Action
 
 # Usage
 
