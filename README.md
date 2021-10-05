@@ -19,7 +19,7 @@ steps:
       fetch-depth: 0
   - uses: axetroy/setup-whatchanged@v1
     with:
-      version: v0.4.0
+      version: v0.4.1
   - run: |
       whatchanged
 ```
