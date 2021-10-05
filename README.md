@@ -1,9 +1,9 @@
 # setup-whatchanged
 
-[![GitHub Actions status](https://github.com/whatchanged-community/setup-whatchanged/workflows/ci/badge.svg?branch=master)](https://github.com/whatchanged-community/setup-whatchanged/actions)
+[![GitHub Actions status](https://github.com/release-lab/setup-whatchanged/workflows/ci/badge.svg?branch=master)](https://github.com/release-lab/setup-whatchanged/actions)
 
-setup [whatchanged](https://github.com/whatchanged-community/whatchanged)
-command line in Github Action
+setup [whatchanged](https://github.com/release-lab/whatchanged) command line in
+Github Action
 
 # Usage
 
@@ -17,7 +17,7 @@ steps:
     with:
       # **this is important**
       fetch-depth: 0
-  - uses: axetroy/setup-whatchanged@v1
+  - uses: release-lab/setup-whatchanged@v1
     with:
       version: v0.4.1
   - run: |
