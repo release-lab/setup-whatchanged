@@ -19,7 +19,7 @@ steps:
       fetch-depth: 0
   - uses: release-lab/setup-whatchanged@v1
     with:
-      version: v0.5.5
+      version: v0.5.6
   - run: |
       whatchanged
 ```
